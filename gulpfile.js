@@ -1,10 +1,9 @@
 var gulp = require('gulp');
-var open = require('gulp-open');
+// var open = require('gulp-open');
 
 var livereload = require('gulp-livereload');
 var nodemon = require('gulp-nodemon');
-
-const babel = require('gulp-babel');
+// const babel = require('gulp-babel');
 
 gulp.task('default', ['nodemon']);
 
@@ -21,6 +20,13 @@ gulp.task('nodemon', function () {
             }, 1000);
         })
 });
+
+// gulp.task('concat_js', function () {
+//     return gulp.src(['./**/*.js'])    
+//                     .pipe(babel({
+//                         presets: ['es2015']
+//                     }))             
+// });
 
 
 

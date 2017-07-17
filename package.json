@@ -4,8 +4,9 @@
     "private": true,
     "scripts": {
         "start": "gulp",
-        "test": "./node_modules/.bin/mocha ./test/*",
-        "eslint": "./node_modules/.bin/eslint ./public/js/**/*.js",
+        "test": "./node_modules/.bin/mocha ./test/**/*.js",
+        "test1": "./node_modules/.bin/mocha ./test/*.js",
+        "eslint": "./node_modules/.bin/eslint ./app.js",
         "nyc": "nyc --reporter=lcov --reporter=text-lcov mocha"
     },
     "dependencies": {
@@ -55,10 +56,9 @@
         "karma-jasmine": "^0.3.6",
         "line-by-line": "^0.1.5",
         "middleware": "^1.0.0",
-        "mocha": "^3.2.0",
         "moment": "^2.18.1",
         "mongo-express": "^0.21.0",
-        "mongoose": "^4.11.0",
+        "mongoose": "^4.11.3",
         "morgan": "^1.0.1",
         "mysql": "^2.7.0",
         "ng-annotate": "^1.1.0",
@@ -77,6 +77,7 @@
         "codecov": "^2.2.0",
         "eslint": "^4.2.0",
         "gulp-babel": "^6.1.2",
-        "nyc": "^11.0.3"
+        "mocha": "^3.4.2",
+        "nyc": "^11.1.0"
     }
 }
